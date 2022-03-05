@@ -10,15 +10,15 @@ import org.json.JSONArray
 data class Movie(
     val movieId: Int,
     val voteAverage:Double,
-    private val posterPath: String,
     private val backdropPath: String,
+    private val posterPath: String,
     val title: String,
     val overview: String,
 ) : Parcelable {
     @IgnoredOnParcel
-    val posterImageUrl = "https://image.tmdb.org/t/p/w342/$posterPath"
-    @IgnoredOnParcel
     val backdropUrl = "https://image.tmdb.org/t/p/w342/$backdropPath"
+    @IgnoredOnParcel
+    val posterImageUrl = "https://image.tmdb.org/t/p/w342/$posterPath"
     companion object {
         fun fromJsonArray(movieJsonArray: JSONArray): List<Movie> {
             val movies = mutableListOf<Movie>()

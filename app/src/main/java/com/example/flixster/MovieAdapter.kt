@@ -50,10 +50,9 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
             tvOverview. text = movie.overview
 
             if (context.resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
-                imageURL = movie.posterImageUrl
-
-            } else {
                 imageURL = movie.backdropUrl
+            } else {
+                imageURL = movie.posterImageUrl
             }
 
             Glide.with(context).load(imageURL).into(ivPoster)
