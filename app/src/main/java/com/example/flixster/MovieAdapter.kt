@@ -3,6 +3,7 @@ package com.example.flixster
 
 import android.content.Context
 import android.content.Intent
+import android.content.res.Configuration
 import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
@@ -15,6 +16,8 @@ import com.bumptech.glide.Glide
 
 const val MOVIE_EXTRA = "MOVIE_EXTRA"
 private const val TAG = "MovieAdapter"
+var imageURL: String = ""
+
 class MovieAdapter(private val context: Context, private val movies: List<Movie>)
     : RecyclerView.Adapter<MovieAdapter.ViewHolder>() {
 
@@ -45,7 +48,15 @@ class MovieAdapter(private val context: Context, private val movies: List<Movie>
         fun bind(movie: Movie) {
             tvTitle.text = movie.title
             tvOverview. text = movie.overview
-            Glide.with(context).load(movie.posterImageUrl).into(ivPoster)
+
+            if (context.resources.configuration.orientation == Configuration.ORIENTATION_LANDSCAPE) {
+                imageURL = movie.posterImageUrl
+
+            } else {
+                imageURL = movie.backdropUrl
+            }
+
+            Glide.with(context).load(imageURL).into(ivPoster)
         }
 
         override fun onClick(v: View?) {
