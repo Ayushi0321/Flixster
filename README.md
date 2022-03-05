@@ -52,9 +52,9 @@ Describe any challenges encountered while building the app.
 - [ ] (2pts) For popular movies (i.e. a movie voted for more than 5 stars), the full backdrop image is displayed. Otherwise, a poster image, the movie title, and overview is listed. Use Heterogenous RecyclerViews and use different ViewHolder layout files for popular movies and less popular ones.
 
 ### App Walkthough GIF
-####Potrait Mode
+#### Potrait Mode
 <img src="WalkThrough.gif" width=250><br>
-####Landscape Mode
+#### Landscape Mode
 <img src="WalkThrough_Landscape.gif" width=500><br>
 
 ### Notes
