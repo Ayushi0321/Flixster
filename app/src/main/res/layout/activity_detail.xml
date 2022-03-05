@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="#495057"
     tools:context=".DetailActivity">
 
     <com.google.android.youtube.player.YouTubePlayerView
@@ -19,6 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
+        android:textColor="#FFFFFF"
         android:textAppearance="@style/TextAppearance.AppCompat.Display1"
         android:text="Spider-Man: No Way Home" />
 
@@ -32,6 +34,7 @@
         android:layout_marginEnd="8dp"
         android:isIndicator="true"
         android:rating="4.5"
+
         android:numStars="10"
         android:stepSize="0.5"/>
 
@@ -42,5 +45,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
+        android:textColor="#FFFFFF"
         android:text="Peter Parker is unmasked and no longer able to separate his normal life from the high-stakes of being a super-hero. When he asks for help from Doctor Strange the stakes become even more dangerous, forcing him to discover what it truly means to be Spider-Man." />
 </LinearLayout>
