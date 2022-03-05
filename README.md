@@ -53,9 +53,9 @@ Describe any challenges encountered while building the app.
 
 ### App Walkthough GIF
 Potrait Mode
-<br><img src="WalkThrough.gif" width=250><br>
+<br><br><img src="WalkThrough.gif" width=250><br><br>
 Landscape Mode
-<br><img src="WalkThrough_Landscape.gif" width=500><br>
+<br><br><img src="WalkThrough_Landscape.gif" width=500><br>
 
 ### Notes
 Describe any challenges encountered while building the app.
