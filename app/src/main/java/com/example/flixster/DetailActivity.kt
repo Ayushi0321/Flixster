@@ -69,7 +69,6 @@ class DetailActivity : YouTubeBaseActivity() {
                 player: YouTubePlayer?,
                 p2: Boolean
             ) {
-                Log.i(TAG, "onInitializationSuccess")
                 player?.cueVideo(youtubekey)
             }
 
